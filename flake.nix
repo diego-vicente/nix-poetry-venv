@@ -29,7 +29,7 @@
               export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:$LD_LIBRARY_PATH
               export EXTRA_CCFLAGS="-I/usr/include"
               unset SOURCE_DATE_EPOCH
-              poetry config virtualenvs.create false --local
+              poetry config virtualenvs.in-project true --local
             '';
           };
         }
